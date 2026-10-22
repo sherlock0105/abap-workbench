@@ -1,2 +1,0 @@
-# abap-workbench
-ABAP WORKBENCH
