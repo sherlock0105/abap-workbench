@@ -1,0 +1,35 @@
+import {filterDocument} from './filter-docs.js';
+import {extendedKinds,generateExtended} from './extended-generators.js';
+const fence=code=>'```abap\n'+code+'\n```';
+const samples=[
+ ['required','필수값','AT SELECTION-SCREEN 또는 PAI FIELD 검증에서 사용합니다. 공백과 0의 의미는 업무 규칙으로 구분하세요.',`PARAMETERS pa_bukrs TYPE t001-bukrs.\nAT SELECTION-SCREEN.\n  IF pa_bukrs IS INITIAL.\n    MESSAGE '회사코드는 필수입니다.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE / pa_bukrs.`],
+ ['exists','존재 확인 · SY-SUBRC','SELECT 직후 SY-SUBRC를 검사합니다. SELECT SINGLE에도 INTO가 필요합니다. 다른 구문이 SY-SUBRC를 바꾸기 전에 판정하세요. 호환 예제는 실제 컬럼을 선택합니다.',`PARAMETERS pa_bukrs TYPE t001-bukrs.\nDATA gv_found TYPE t001-bukrs.\nAT SELECTION-SCREEN.\n  CLEAR gv_found.\n  SELECT SINGLE bukrs FROM t001 INTO gv_found WHERE bukrs = pa_bukrs.\n  IF sy-subrc <> 0.\n    MESSAGE '등록되지 않은 회사코드입니다.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE / gv_found.`],
+ ['master','코드·마스터 검증','코드의 존재와 언어별 텍스트의 존재를 구분합니다. 회사코드에 종속된 G/L 계정은 SKB1의 BUKRS+SAKNR로 검사합니다. 전역 차단·삭제, 전기 가능 여부와 권한은 추가 업무 검사입니다.',`PARAMETERS: pa_bukrs TYPE t001-bukrs, pa_saknr TYPE skb1-saknr.\nDATA gv_found TYPE skb1-saknr.\nAT SELECTION-SCREEN.\n  CALL FUNCTION 'CONVERSION_EXIT_ALPHA_INPUT'\n    EXPORTING input = pa_saknr IMPORTING output = pa_saknr.\n  SELECT SINGLE saknr FROM skb1 INTO gv_found\n    WHERE bukrs = pa_bukrs AND saknr = pa_saknr\n      AND xloeb = space AND xspeb = space.\n  IF sy-subrc <> 0.\n    MESSAGE '회사코드별 계정과 차단·삭제 여부를 확인하세요.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE / pa_saknr.`],
+ ['date','날짜·기간','조회조건 화면에서 양쪽 날짜의 달력상 유효성과 기간 역전을 검사합니다. 회계연도·전기기간 검증은 별도의 FI 규칙입니다.',null,'date'],
+ ['number','범위·숫자','TYPE I는 입력 형식을 화면에서 검사합니다. 그다음 업무상 허용 범위를 검사합니다. 0이 유효한 값인지 명시하세요.',`PARAMETERS pa_count TYPE i DEFAULT 100.\nAT SELECTION-SCREEN.\n  IF pa_count < 1 OR pa_count > 10000.\n    MESSAGE '건수는 1~10000으로 입력하세요.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE / pa_count.`],
+ ['currency','통화·금액','통화 존재와 소수 자릿수 표시는 별도입니다. 통화별 내부 금액과 외부 입력 문자열을 혼동하지 마세요. 아래 코드는 TCURC 검증 및 WRITE CURRENCY 표시 예제입니다.',null,'amount'],
+ ['cross','교차 필드·의존성','하나만 입력할 수 있는 CO 객체의 상호 배타 규칙 예제입니다. 실제 전표의 필드상태·계정별 CO 요구사항을 대신하지 않습니다.',`PARAMETERS: pa_kostl TYPE csks-kostl, pa_aufnr TYPE aufk-aufnr.\nAT SELECTION-SCREEN.\n  IF pa_kostl IS INITIAL AND pa_aufnr IS INITIAL.\n    MESSAGE '코스트센터 또는 내부오더 하나를 입력하세요.' TYPE 'E'.\n  ENDIF.\n  IF pa_kostl IS NOT INITIAL AND pa_aufnr IS NOT INITIAL.\n    MESSAGE '두 CO 객체를 동시에 입력할 수 없습니다.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE: / pa_kostl, pa_aufnr.`],
+ ['duplicate','중복','업로드 후 저장 전에 업무키 중복을 검출합니다. 원본을 SORT/DELETE로 파괴하지 않고 별도 HASHED TABLE로 검사합니다. DB 동시 중복은 유일키와 잠금으로 방지해야 합니다.',`TYPES: BEGIN OF ty_row, id TYPE c LENGTH 10, text TYPE c LENGTH 40, END OF ty_row.\nDATA: gt_data TYPE STANDARD TABLE OF ty_row,\n      gt_seen TYPE HASHED TABLE OF ty_row WITH UNIQUE KEY id, gs_data TYPE ty_row.\nSTART-OF-SELECTION.\n  gs_data-id = 'A'. gs_data-text = '첫 행'. APPEND gs_data TO gt_data.\n  gs_data-text = '중복 행'. APPEND gs_data TO gt_data.\n  PERFORM check_duplicates.\nFORM check_duplicates.\n  CLEAR gt_seen.\n  LOOP AT gt_data INTO gs_data.\n    INSERT gs_data INTO TABLE gt_seen.\n    IF sy-subrc <> 0.\n      WRITE: / '중복 키:', gs_data-id.\n    ENDIF.\n  ENDLOOP.\nENDFORM.`],
+ ['itab','내부테이블','빈 테이블·누락된 키·행 단위 오류를 검사하고 오류가 있으면 후속 처리를 하지 않습니다. 이 예제는 오류 플래그를 호출자에게 돌려줍니다.',`TYPES: BEGIN OF ty_row, id TYPE c LENGTH 10, amount TYPE p LENGTH 8 DECIMALS 2, END OF ty_row.\nDATA: gt_data TYPE STANDARD TABLE OF ty_row, gs_data TYPE ty_row, gv_error TYPE abap_bool.\nSTART-OF-SELECTION.\n  PERFORM validate_rows CHANGING gv_error.\n  IF gv_error = abap_true. RETURN. ENDIF.\n  WRITE / '검증 완료'.\nFORM validate_rows CHANGING pv_error TYPE abap_bool.\n  CLEAR pv_error.\n  IF gt_data IS INITIAL.\n    pv_error = abap_true.\n    WRITE / '데이터가 없습니다.'.\n    RETURN.\n  ENDIF.\n  LOOP AT gt_data INTO gs_data.\n    IF gs_data-id IS INITIAL OR gs_data-amount <= 0.\n      pv_error = abap_true. WRITE: / '오류 행', sy-tabix.\n    ENDIF.\n  ENDLOOP.\nENDFORM.`],
+ ['alv','ALV 편집','DATA_CHANGED에서 셀 오류를 프로토콜에 등록하고 저장 직전 CHECK_CHANGED_DATA의 E_VALID를 검사합니다. 이 전체 예제는 CHECK 버튼으로 검증하며 DB 저장은 하지 않습니다.',null,'alv-edit'],
+ ['fi','FI 전표','헤더·항목·통화금액을 구성하고 BAPI_ACC_DOCUMENT_CHECK의 RETURN을 검사합니다. A/E/X가 있으면 실패이며, CHECK 통과만으로 전기가 완료되지 않습니다. 실제 회사 설정과 계정의 추가 필수값을 확인하세요.',null,'fi-check'],
+ ['authority','권한','조회·저장 전에 업무 객체를 검사합니다. 객체·ACTVT는 SU21과 권한 설계에서 확인하며 SY-SUBRC=0만 성공입니다.',null,'authority']
+];
+export const validationTopics=samples.map(([id,label,note])=>({id,title:label.endsWith('검증')?label:label+' 검증',description:note,match:'유효성 검사 — '+label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),aliases:label+' validation check'}));
+const options={program:'ZWB_EXAMPLE',table:'SCARR',key:'CARRID',screen:'0100',screenField:'GV_VALUE',container:'CC_ALV'};
+function document(id,title,summary,body,category='유효성 검사'){
+ return {id,title,summary,body,text:body,category,source:'학습 문서',track:'ABAP',format:'markdown',recipe:true,path:'실무 완성 예제 / '+category,url:'https://sherlock0105.github.io/abap-workbench/#docs/'+id,events:[],search:(title+' '+summary+' '+body).normalize('NFKC').toLowerCase()};
+}
+const pack=files=>files.map(f=>'## '+f.name+' · '+f.where+'\n'+(f.name.endsWith('.txt')?f.code:fence(f.code))).join('\n\n');
+export const practiceDocuments=samples.map(([id,label,note,code,kind])=>document('validate-'+id,'유효성 검사 — '+label,note,
+ '## 적용 시점·전제\n'+note+'\n\nStandard ABAP / SAP GUI. 아래 신문법 예제는 ABAP 7.40 SP08 이상을 기준으로 합니다. SAP 컴파일·실행은 미검증입니다.\n\n'+(code?'## 전체 실행 프로그램\nSE38에서 실행 프로그램 ZWB_VALIDATE를 생성하세요.\n'+fence('REPORT zwb_validate.\n'+code):pack(generateExtended(kind,options)))+
+ '\n\n## 확인할 사례\n정상값, 빈 값, 존재하지 않는 값, 경계값, 중복, F4 취소 및 직접 Enter 입력을 해당 유형에 맞게 확인하세요. E 메시지는 Selection-screen/PAI 문맥에서 사용하며, 배치 로직은 오류 반환값을 검사합니다.'));
+practiceDocuments.push(document('select-exists-correct','SELECT SINGLE 존재 검사 — INTO와 오류 제어','SELECT SINGLE @abap_true 뒤에는 대상 변수가 필요합니다.',
+ '## 수정한 추천 패턴\nABAP 7.40 SP08+ Standard ABAP 기준입니다. SELECT 직후 SY-SUBRC를 확인합니다. 빈 값 검사는 별도로 수행합니다.\n'+fence(`REPORT zwb_exists.\nPARAMETERS pa_bukrs TYPE t001-bukrs OBLIGATORY.\nDATA gv_exists TYPE abap_bool.\nAT SELECTION-SCREEN.\n  CLEAR gv_exists.\n  SELECT SINGLE @abap_true FROM t001\n    WHERE bukrs = @pa_bukrs INTO @gv_exists.\n  IF sy-subrc <> 0.\n    MESSAGE '회사코드가 없습니다.' TYPE 'E'.\n  ENDIF.\nSTART-OF-SELECTION.\n  WRITE / pa_bukrs.`)+'\n\n## 구문·문맥 주의\nINTO 없는 SELECT SINGLE은 이 패턴에서 잘못된 예제입니다. 구문법 시스템은 T001-BUKRS 필드를 선언해 SELECT SINGLE BUKRS INTO 변수로 조회하세요. MESSAGE S DISPLAY LIKE E는 표시 색상만 바꾸며 실행을 중단하지 않습니다. FORM의 EXIT/RETURN은 그 FORM만 끝내므로 호출자가 오류값을 확인해야 합니다.','SQL·DB'));
+export const generatorDocuments=extendedKinds.map(([id,title])=>{
+ const o={...options,...(['crud','db-create','db-update','db-delete'].includes(id)?{table:'ZWB_DEMO',key:'ID'}:{})};
+ return document('build-'+id,title,'선언·호출·적용 위치·전제조건과 전체 코드 묶음. 코드 생성기에서 이름과 화면 필드를 설정하세요.',
+ '## 내 이름으로 생성하기\n왼쪽 메뉴의 코드 생성기에서 '+title+' 유형을 선택하면 프로그램명·필드명·화면번호·객체 접두사를 지정할 수 있습니다. 구역별 복사와 전체 ZIP을 지원합니다.\n\n'+pack(generateExtended(id,o)),'생성기 전체 예제');
+});
+
+practiceDocuments.push(filterDocument);

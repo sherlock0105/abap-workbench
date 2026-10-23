@@ -1,0 +1,53 @@
+{
+  "total": 1640,
+  "notion": 517,
+  "firstKeys": [
+    "id",
+    "title",
+    "source",
+    "category",
+    "summary",
+    "text",
+    "search",
+    "path",
+    "url",
+    "recipe",
+    "events"
+  ],
+  "missingReferences": [
+    {
+      "id": "3128138647d08001838bd3ad5fe4a805",
+      "url": "https://app.notion.com/p/3128138647d08001838bd3ad5fe4a805",
+      "parents": [
+        {
+          "id": "notion-3eca6b8522df81338325de33f03621c4",
+          "title": "🧠 개념 — DDIC·화면 흐름·클래스·업무"
+        },
+        {
+          "id": "notion-35aa6b8522df800d82ebc88db09d357a",
+          "title": "CDS View 정리 카피 - 성환"
+        }
+      ]
+    },
+    {
+      "id": "2c9fb598e33780f2bbb6d00ab3029d84",
+      "url": "https://app.notion.com/p/2c9fb598e33780f2bbb6d00ab3029d84",
+      "parents": [
+        {
+          "id": "notion-2aea6b8522df80edbf4df9ede1033cec",
+          "title": "참고자료"
+        }
+      ]
+    },
+    {
+      "id": "29be301468c980cfbec6c3254bbd913f",
+      "url": "https://app.notion.com/p/29be301468c980cfbec6c3254bbd913f",
+      "parents": [
+        {
+          "id": "notion-2aea6b8522df80edbf4df9ede1033cec",
+          "title": "참고자료"
+        }
+      ]
+    }
+  ]
+}

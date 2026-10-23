@@ -1,0 +1,7 @@
+node_modules/
+artifacts/
+.sites-local/
+*.tar.gz
+
+__pycache__/
+*.pyc

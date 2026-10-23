@@ -1,0 +1,43 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import lint from '@abaplint/core';
+import parser from '../node_modules/@abaplint/core/build/src/rules/parser_error.js';
+import {generate} from '../dist/generators.js';
+import {styleRecipes} from '../dist/style-recipes.js';
+import {fcatRecipes} from '../dist/style-alv.js';
+import {argumentRows,combinedProgram,readableCode} from '../dist/code-tools.js';
+import {tokenizeCode} from '../dist/abap-highlight.js';
+import {standardSnippets,snippetParameters} from '../dist/standard-snippets.js';
+import {roleCodeFiles} from '../dist/core-code-view.js';
+import {libraryEntries} from '../dist/code-hierarchy.js';
+import {roleFiles} from '../dist/role-library.js';
+assert.equal(styleRecipes.filter(r=>r.major==='read').length,12);
+assert.equal(styleRecipes.filter(r=>r.major==='loop').length,12);
+assert.equal(styleRecipes.filter(r=>r.major==='modern').length,18);
+const failures=[];
+for(const entry of styleRecipes){
+ const core=standardSnippets[entry.kind].core;
+ assert.match(core,/\bSELECT\b/);
+ assert.ok(!/\b(?:REPORT|INCLUDE|PERFORM set_init|gs_data|gt_data)\b/i.test(core),entry.kind);
+ const code='REPORT ztest.\n'+snippetParameters(core)+'\nSTART-OF-SELECTION.\nPERFORM run_example.\nFORM run_example.\n'+core+'\nENDFORM.';
+ const reg=new lint.Registry(new lint.Config(JSON.stringify({syntax:{version:'v740sp08'}})));
+ reg.addFile(new lint.MemoryFile('ztest.prog.abap',code));reg.parse();
+ for(const obj of reg.getObjects())for(const issue of new parser.ParserError().initialize(reg).run(obj))failures.push({kind:entry.kind,message:issue.getMessage()});
+ const views=roleCodeFiles(entry,generate(entry.kind));assert.equal(views[0].core,true);assert.equal(views[0].label,'핵심 코드');assert.ok(views.some(f=>f.complete));
+}
+assert.deepEqual(failures,[]);
+for(const entry of libraryEntries)assert.ok(roleCodeFiles(entry,roleFiles(entry))[0].code.trim(),entry.id);
+const headerView=roleCodeFiles({id:'alv-top',kind:'alv-top'},generate('alv-top'));
+assert.ok(headerView[0].code.includes('FORM create_top_0100'));
+assert.ok(!headerView[0].code.includes('FORM set_init'));
+const header=combinedProgram(generate('alv-top',{screen:'0200',container:'GCL_CONTAINER'})).code;
+for(const part of ['PERFORM create_top_0200.','FORM create_top_0200 .','CALL METHOD gcl_document->initialize_document.',"container_name = 'GCL_TOP'",'parent        = gcl_top'])assert.ok(header.includes(part),part);
+assert.ok(!header.includes('list_processing_events'));
+assert.ok(combinedProgram(generate('alv-top-event')).code.includes('list_processing_events'));
+for(const entry of fcatRecipes){const files=generate(entry.kind,{screen:'0200',container:'GCL_CONTAINER'});assert.ok(files.find(f=>f.name==='screen_0200.flow.abap'));assert.ok(files.some(f=>f.code.includes("container_name = 'GCL_CONTAINER'")));}
+const protectedCode="FORM test.\n  lv_text = |first\nidentifier = leave this spacing\nlast|.\n  lv_x = 1.\n  lv_long = 2.\nENDFORM.";
+const tokens=s=>tokenizeCode(s).flatMap(l=>l.tokens).filter(t=>t.text.trim()).map(t=>t.text.trim());
+const aligned=readableCode(protectedCode);assert.deepEqual(tokens(aligned),tokens(protectedCode));assert.equal(readableCode(aligned),aligned);assert.ok(aligned.includes('identifier = leave this spacing'));assert.match(aligned,/lv_x\s{4}= 1/);
+const args=argumentRows([['X','ID',"O'Brien"],[' ','LONG_FIELD','긴 제목']]);assert.ok(args.includes("'O''Brien'"));assert.ok(!args.includes("'ID        '"));
+const report={passed:true,newRoles:50,read:12,loop:12,modern:18,alv:8,standardQueryCoreExamples:42,defaultCoreViews:libraryEntries.length,checks:['core first; full report optional','42 real standard-table SELECT examples','no synthetic 3-row fixtures','core code parser with required parameters','user CREATE_TOP only in default view','5-argument MAKE_FCAT','legacy TOP_OF_PAGE retained','protected literals and alignment','screen/container customization'],limitation:'Grammar checked only; SAP DDIC/SE37 metadata and actual SAP execution are not connected.'};
+fs.writeFileSync('audit/style-recipes-tests.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

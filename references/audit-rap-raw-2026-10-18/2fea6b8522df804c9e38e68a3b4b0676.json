@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"2fea6b8522df804c9e38e68a3b4b0676\",\"title\":\"SELECT\",\"text\":\"Here is the result of \\\"fetch\\\" for the Page with URL https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676 as of 2026-02-05T12:47:55.252Z:\\n<page url=\\\"https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676\\\">\\n<ancestor-path>\\n<parent-page url=\\\"https://app.notion.com/p/2fca6b8522df80fcaecbe32ff22ec4eb\\\" title=\\\"ADBC DATA 처리\\\"/>\\n<ancestor-2-page url=\\\"https://app.notion.com/p/2f1a6b8522df80c4a2cfd3c26cce55b3\\\" title=\\\"Eclipse\\\"/>\\n<ancestor-3-page url=\\\"https://app.notion.com/p/312a6b8522df80ba9691e984fd23f2b1\\\" title=\\\"RAP\\\"/>\\n<ancestor-4-page url=\\\"https://app.notion.com/p/3e6a6b8522df81499cdac11b61fa544b\\\" title=\\\"05 수업 원본·캡처\\\"/>\\n<ancestor-5-page url=\\\"https://app.notion.com/p/3a3a6b8522df80cdb505c85b6e8ca52e\\\" title=\\\"RAP 심화과정 2기 \\\"/>\\n<ancestor-6-page url=\\\"https://app.notion.com/p/31fa6b8522df80ccb077e7d356a90fb0\\\" title=\\\"SAP-CODE 1기\\\"/>\\n</ancestor-path>\\n<properties>\\n{\\\"title\\\":\\\"SELECT\\\"}\\n</properties>\\n<iconMetadata>null</iconMetadata>\\n<blank-page>This page is blank and has no content.</blank-page>\\n</page>\",\"url\":\"https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676?pvs=204\",\"metadata\":{\"type\":\"page\"},\"cover\":null,\"icon\":null,\"path\":\"SAP-CODE 1기 / RAP 심화과정 2기 / 05 수업 원본·캡처 / RAP / Eclipse / ADBC DATA 처리\",\"verification\":{\"state\":\"unverified\"},\"page_last_edited_at\":\"2026-02-05T12:47:55.252Z\"}"
+    }
+  ],
+  "structuredContent": {
+    "id": "2fea6b8522df804c9e38e68a3b4b0676",
+    "title": "SELECT",
+    "text": "Here is the result of \"fetch\" for the Page with URL https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676 as of 2026-02-05T12:47:55.252Z:\n<page url=\"https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676\">\n<ancestor-path>\n<parent-page url=\"https://app.notion.com/p/2fca6b8522df80fcaecbe32ff22ec4eb\" title=\"ADBC DATA 처리\"/>\n<ancestor-2-page url=\"https://app.notion.com/p/2f1a6b8522df80c4a2cfd3c26cce55b3\" title=\"Eclipse\"/>\n<ancestor-3-page url=\"https://app.notion.com/p/312a6b8522df80ba9691e984fd23f2b1\" title=\"RAP\"/>\n<ancestor-4-page url=\"https://app.notion.com/p/3e6a6b8522df81499cdac11b61fa544b\" title=\"05 수업 원본·캡처\"/>\n<ancestor-5-page url=\"https://app.notion.com/p/3a3a6b8522df80cdb505c85b6e8ca52e\" title=\"RAP 심화과정 2기 \"/>\n<ancestor-6-page url=\"https://app.notion.com/p/31fa6b8522df80ccb077e7d356a90fb0\" title=\"SAP-CODE 1기\"/>\n</ancestor-path>\n<properties>\n{\"title\":\"SELECT\"}\n</properties>\n<iconMetadata>null</iconMetadata>\n<blank-page>This page is blank and has no content.</blank-page>\n</page>",
+    "url": "https://app.notion.com/p/2fea6b8522df804c9e38e68a3b4b0676?pvs=204",
+    "metadata": {
+      "type": "page"
+    },
+    "cover": null,
+    "icon": null,
+    "path": "SAP-CODE 1기 / RAP 심화과정 2기 / 05 수업 원본·캡처 / RAP / Eclipse / ADBC DATA 처리",
+    "verification": {
+      "state": "unverified"
+    },
+    "page_last_edited_at": "2026-02-05T12:47:55.252Z"
+  },
+  "isError": false
+}

@@ -1,0 +1,1062 @@
+[
+  {
+    "title": "Report 화면 뼈대 — CALL SCREEN·0100·PBO·PAI",
+    "url": "https://app.notion.com/p/3e8a6b8522df81679285efcd2adb817f",
+    "category": "ABAP"
+  },
+  {
+    "title": "Module Pool — T-code로 실행하는 빈 화면",
+    "url": "https://app.notion.com/p/3e8a6b8522df8127ab6ee853be8d6d17",
+    "category": "ABAP"
+  },
+  {
+    "title": "기본 ALV — Custom Container·Screen Painter",
+    "url": "https://app.notion.com/p/3e8a6b8522df815ab6c5d2419b6041b0",
+    "category": "ABAP"
+  },
+  {
+    "title": "TOP OF PAGE 탑오브페이지 — 상단 요약·하단 ALV",
+    "url": "https://app.notion.com/p/3e8a6b8522df810f9018d3a4b5882c59",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Tree 트리 — 노드 생성·오른쪽 상세 Grid",
+    "url": "https://app.notion.com/p/3e8a6b8522df81758684da7464d9560b",
+    "category": "ABAP"
+  },
+  {
+    "title": "Header–Item — 위 목록 클릭하면 아래 상세",
+    "url": "https://app.notion.com/p/3e8a6b8522df81d68bdef23cbbe850a3",
+    "category": "ABAP"
+  },
+  {
+    "title": "Tabstrip + Subscreen — 탭별 다른 입력 화면",
+    "url": "https://app.notion.com/p/3e8a6b8522df81eaaf19c0ec808b250d",
+    "category": "ABAP"
+  },
+  {
+    "title": "Popup ALV — 더블클릭으로 상세창 띄우기",
+    "url": "https://app.notion.com/p/3e8a6b8522df812ea3cbcd391a54135d",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Toolbar 버튼·클릭 이벤트 연결",
+    "url": "https://app.notion.com/p/3e8a6b8522df817b84cfd1c0a2e9a947",
+    "category": "ABAP"
+  },
+  {
+    "title": "🔍 13 F4 검색 도움말 — Dynpro 입력칸에 결과 넣기",
+    "url": "https://app.notion.com/p/3e8a6b8522df81b0b731d1639d4c5735",
+    "category": "ABAP"
+  },
+  {
+    "title": "화면 필드 동적 제어 — LOOP AT SCREEN",
+    "url": "https://app.notion.com/p/3e8a6b8522df8146b98dc328d556ef9f",
+    "category": "ABAP"
+  },
+  {
+    "title": "Text Editor 생성 — CL_GUI_TEXTEDIT·텍스트 읽기·쓰기",
+    "url": "https://app.notion.com/p/2f4a6b8522df802f87dde09bcc5b0ccc",
+    "category": "ABAP"
+  },
+  {
+    "title": "Screen Painter — 화면 레이아웃",
+    "url": "https://app.notion.com/p/2b0a6b8522df8039936be2f489828344",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP 필수 T-CODE 한줄 요약",
+    "url": "https://app.notion.com/p/2b0a6b8522df80b5b88ede00c26be623",
+    "category": "ABAP"
+  },
+  {
+    "title": "PARAMETERS 종류",
+    "url": "https://app.notion.com/p/2bda6b8522df802590ccfa001ddf0eea",
+    "category": "ABAP"
+  },
+  {
+    "title": "Selection Screen 생성 — PARAMETERS·SELECT-OPTIONS·라디오버튼",
+    "url": "https://app.notion.com/p/2d1a6b8522df80678dd0fbe657e83acd",
+    "category": "ABAP"
+  },
+  {
+    "title": "Popup 닫기 버튼 — PF-STATUS·CLOSE·취소",
+    "url": "https://app.notion.com/p/2dca6b8522df80cb9d4ec5f711a7dcb0",
+    "category": "ABAP"
+  },
+  {
+    "title": "F4 검색 도움말 — F4IF_INT_TABLE_VALUE_REQUEST·선택값 반영",
+    "url": "https://app.notion.com/p/2e7a6b8522df801ba244c8b17b057e67",
+    "category": "ABAP"
+  },
+  {
+    "title": "TAB - SUBSCREEN",
+    "url": "https://app.notion.com/p/2e7a6b8522df80528298f8021135b2e7",
+    "category": "ABAP"
+  },
+  {
+    "title": "Module Pool — 데이터 저장",
+    "url": "https://app.notion.com/p/2e7a6b8522df809eb02be1922fa12f51",
+    "category": "ABAP"
+  },
+  {
+    "title": "Module Pool — 데이터 표시",
+    "url": "https://app.notion.com/p/2e7a6b8522df80e68f26e6305f10e275",
+    "category": "ABAP"
+  },
+  {
+    "title": "화면 버튼 — 동적 제어·조회조건 버튼",
+    "url": "https://app.notion.com/p/2fca6b8522df80b596c1c694d8985d1e",
+    "category": "ABAP"
+  },
+  {
+    "title": "RANGE 조건 생성 — SIGN·OPTION·LOW·HIGH",
+    "url": "https://app.notion.com/p/303a6b8522df805eabd7cdab9557cd0b",
+    "category": "ABAP"
+  },
+  {
+    "title": "조회조건 동적 전환 — RADIOBUTTON·USER-COMMAND·MODIF ID",
+    "url": "https://app.notion.com/p/31ea6b8522df808fad66f4f4d61c5852",
+    "category": "ABAP"
+  },
+  {
+    "title": "AT SELECTION-SCREEN OUTPUT",
+    "url": "https://app.notion.com/p/2d1a6b8522df80f3b1ddc7d98bfb8e56",
+    "category": "ABAP"
+  },
+  {
+    "title": "PAI 구현 — OKCODE·USER_COMMAND·종료 처리",
+    "url": "https://app.notion.com/p/2d1a6b8522df807a9af7ed373cecb19f",
+    "category": "ABAP"
+  },
+  {
+    "title": "PBO 구현 — PF-STATUS·TITLEBAR·ALV 표시",
+    "url": "https://app.notion.com/p/2d1a6b8522df807ca561db52632a7446",
+    "category": "ABAP"
+  },
+  {
+    "title": "ON REQUEST",
+    "url": "https://app.notion.com/p/2e7a6b8522df80ea97dce7ff2c85a65c",
+    "category": "ABAP"
+  },
+  {
+    "title": "Text Symbol — TEXT 요소 생성",
+    "url": "https://app.notion.com/p/2daa6b8522df803f93a3facec48a81d5",
+    "category": "ABAP"
+  },
+  {
+    "title": "RANGE 작성 캡처 — 조회조건 테이블",
+    "url": "https://app.notion.com/p/2fca6b8522df80378de4c2ae289e7ef9",
+    "category": "ABAP"
+  },
+  {
+    "title": "Dynpro Enter 조회 — 키 입력·데이터 표시",
+    "url": "https://app.notion.com/p/2e7a6b8522df80cca515ee5be9d6d6d8",
+    "category": "ABAP"
+  },
+  {
+    "title": "GUI Status 버튼 생성 — CREATE·SAVE·PF-STATUS",
+    "url": "https://app.notion.com/p/2e0a6b8522df8090b0c8e84ec68be1f6",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Layout·스크롤 유지 — LVC_S_LAYO·LVC_S_STBL",
+    "url": "https://app.notion.com/p/2cca6b8522df801a9860cb939f218ec0",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 통화·단위 연결 — CFIELDNAME·QFIELDNAME",
+    "url": "https://app.notion.com/p/2cda6b8522df80c0abc7f5939a8f8762",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 새로고침 — REFRESH_TABLE_DISPLAY",
+    "url": "https://app.notion.com/p/2cda6b8522df80c78c2de2deef18e8a2",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Field Catalog·Layout 설정 — FCAT·컬럼·표시 속성",
+    "url": "https://app.notion.com/p/2cea6b8522df802faf12deb71e0aafcc",
+    "category": "ABAP"
+  },
+  {
+    "title": "Custom Container 생성 — Screen Painter·Custom Control",
+    "url": "https://app.notion.com/p/2d9a6b8522df8036a5b8d08783fa673f",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 필드명 매핑 — FIELDNAME·REF_FIELD·COLTEXT",
+    "url": "https://app.notion.com/p/2daa6b8522df803d8f8fc17de4454cab",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 저장 — SAVE",
+    "url": "https://app.notion.com/p/2e0a6b8522df8046ad31ce49aa930dc7",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 셀 수정 허용·금지 — EDIT·STYLE·키 필드",
+    "url": "https://app.notion.com/p/2e0a6b8522df805d8871e752f21207a6",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 행 추가 — CREATE",
+    "url": "https://app.notion.com/p/2e0a6b8522df8066a706cc68b1c13e4e",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 행 삭제 — DELETE",
+    "url": "https://app.notion.com/p/2e0a6b8522df80a1bccadf2bd9e261ef",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Toolbar 버튼 제거",
+    "url": "https://app.notion.com/p/2e0a6b8522df80b395a5de012f486647",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 합계·소계 — DO_SUM·SUBTOT·TOTALS_BEF",
+    "url": "https://app.notion.com/p/2e2a6b8522df802eb2b7fe7bc7e34457",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 기본 정렬 — LVC_T_SORT·IT_SORT",
+    "url": "https://app.notion.com/p/2e2a6b8522df807eb811def96be03ce0",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 체크박스 컬럼 — CHECKBOX·CHAR1",
+    "url": "https://app.notion.com/p/2e2a6b8522df808b9a2feae5943f6385",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 아이콘·글자 정렬 — ICON_D·ICON·JUST",
+    "url": "https://app.notion.com/p/2e2a6b8522df80a5b8a4d17fcf191eeb",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 설명값 표시 — CASE",
+    "url": "https://app.notion.com/p/2e2a6b8522df80d9acf8e3d5047e2a08",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 셀 스타일·ITAB 삽입 — LVC_T_STYL·INSERT",
+    "url": "https://app.notion.com/p/2e2a6b8522df80fc8765cd3452d0785b",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 셀·행 색상 — LVC_T_SCOL·CTAB_FNAME·SET_COLOR",
+    "url": "https://app.notion.com/p/2e2a6b8522df8199999cddc8be7a8dba",
+    "category": "ABAP"
+  },
+  {
+    "title": "컬럼 색상 주기 EMPHASIZE",
+    "url": "https://app.notion.com/p/2e2a6b8522df81dbb828cb0c0efc8bac",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 편집·조회 전환 — Toggle",
+    "url": "https://app.notion.com/p/2e3a6b8522df806cb2bfedc81e4264c2",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Splitter container",
+    "url": "https://app.notion.com/p/2efa6b8522df80308f2ece82f7a98319",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV Field Catalog 자동 생성 — LVC_FIELDCATALOG_MERGE",
+    "url": "https://app.notion.com/p/2f7a6b8522df805bbc4bfd44fb9b7f01",
+    "category": "ABAP"
+  },
+  {
+    "title": "Popup ALV 원본 — CALL SCREEN·Dialog Container",
+    "url": "https://app.notion.com/p/2fca6b8522df80ae9e3ce181c7098778",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 이벤트 — Local Class·핸들러",
+    "url": "https://app.notion.com/p/2d8a6b8522df803a9e6cfe4295b4d06e",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 이벤트 찾기 — SE24·Events·파라미터",
+    "url": "https://app.notion.com/p/2d9a6b8522df80aca798d89180b1a4af",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 더블클릭 — DOUBLE_CLICK·행 읽기·화면 이동",
+    "url": "https://app.notion.com/p/2dea6b8522df80a4aa35d9244a7231b8",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 핫스팟 — HOTSPOT_CLICK·CALL TRANSACTION",
+    "url": "https://app.notion.com/p/2dea6b8522df807daf25d692a7d25c68",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 더블클릭 상세 팝업 — 행·컬럼 조건",
+    "url": "https://app.notion.com/p/2e3a6b8522df80119188d724e2026914",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 핫스팟 상세 팝업 — 선택 키 조회",
+    "url": "https://app.notion.com/p/2e3a6b8522df8012be09dce53ce80734",
+    "category": "ABAP"
+  },
+  {
+    "title": "Splitter — 더블클릭·핫스팟 연동",
+    "url": "https://app.notion.com/p/2fca6b8522df80c4a431edd0ac33b72a",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 입력 변경 검증 — DATA_CHANGED·변경 셀",
+    "url": "https://app.notion.com/p/2e1a6b8522df8023bc1ad84db1548ca0",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 변경 완료 — DATA_CHANGED_FINISHED·갱신",
+    "url": "https://app.notion.com/p/2e3a6b8522df80e79ab4f47d18f98d1d",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 툴바 버튼 추가 — TOOLBAR",
+    "url": "https://app.notion.com/p/2e3a6b8522df80b9a122ed300d4e0c5e",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 툴바 버튼 실행 — USER_COMMAND",
+    "url": "https://app.notion.com/p/2e3a6b8522df802f89c1d0788894a807",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 셀 버튼 — BUTTON_CLICK·STYLE",
+    "url": "https://app.notion.com/p/2e3a6b8522df80ce8533e79ce4078800",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 트리 노드 클릭 — NODE_DOUBLE_CLICK·상세 조회",
+    "url": "https://app.notion.com/p/35ca6b8522df80e49166e47d8aa5791a",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 이벤트 연결 — Instance Handler·SET HANDLER",
+    "url": "https://app.notion.com/p/2d9a6b8522df80149ed2e89d06d0df35",
+    "category": "ABAP"
+  },
+  {
+    "title": "Lock Object 락 오브젝트·잠금 — SE11 생성·ENQUEUE·DEQUEUE·SM12 (원본 노트)",
+    "url": "https://app.notion.com/p/3b9a6b8522df80958a60caabb672e895",
+    "category": "ABAP"
+  },
+  {
+    "title": "INNER JOIN·LEFT OUTER JOIN — 차이·조회 예제",
+    "url": "https://app.notion.com/p/2afa6b8522df80a580b4c673873849ed",
+    "category": "ABAP"
+  },
+  {
+    "title": "SQL - SELECT WHERE INTO",
+    "url": "https://app.notion.com/p/2b9a6b8522df805ab9f9f869dc13af20",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP Open SQL 집계 함수 정리",
+    "url": "https://app.notion.com/p/2bca6b8522df8082a76adc1dfa77aa0e",
+    "category": "ABAP"
+  },
+  {
+    "title": "SQL 2 -ORDER BY",
+    "url": "https://app.notion.com/p/2bca6b8522df80ad8458f031071b800e",
+    "category": "ABAP"
+  },
+  {
+    "title": "JOIN",
+    "url": "https://app.notion.com/p/2bda6b8522df8002b658fdc7284d4792",
+    "category": "ABAP"
+  },
+  {
+    "title": "DB 저장·수정·삭제 — INSERT·UPDATE·MODIFY·DELETE",
+    "url": "https://app.notion.com/p/2dfa6b8522df80199ffbeb45523cfe29",
+    "category": "ABAP"
+  },
+  {
+    "title": "SELECT 조회 — GET_DATA",
+    "url": "https://app.notion.com/p/2e2a6b8522df8035ab8df32072a3dfb5",
+    "category": "ABAP"
+  },
+  {
+    "title": "FOR ALL ENTRIES",
+    "url": "https://app.notion.com/p/2f1a6b8522df8031b255f3e81bd4d316",
+    "category": "ABAP"
+  },
+  {
+    "title": "LOOP AT, READ TABLE",
+    "url": "https://app.notion.com/p/2b7a6b8522df80438c12c4b95712c09b",
+    "category": "ABAP"
+  },
+  {
+    "title": "MOVE-CORRESPONDING, APPENDING",
+    "url": "https://app.notion.com/p/2c2a6b8522df80859c9fc7f53e77a8cf",
+    "category": "ABAP"
+  },
+  {
+    "title": "DELETE ADJACENT DUPLICATES",
+    "url": "https://app.notion.com/p/2cea6b8522df8097bce0de924b14bd09",
+    "category": "ABAP"
+  },
+  {
+    "title": "Text Table 설명값 채우기 — 코드·언어 키 조회",
+    "url": "https://app.notion.com/p/2d9a6b8522df808a8f7ed9789bebfd45",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 행 개수 — LINES·DESCRIBE TABLE",
+    "url": "https://app.notion.com/p/2e2a6b8522df805fb232dc7b24ac853a",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 선택 행 읽기 — READ TABLE·INDEX",
+    "url": "https://app.notion.com/p/2e7a6b8522df8083a82dedf02878381c",
+    "category": "ABAP"
+  },
+  {
+    "title": "문자열 메시지 조립 — &&·MESSAGE",
+    "url": "https://app.notion.com/p/2eea6b8522df807ba8bcea22453860dd",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP COLLECT로 SQL 집계 구현하기 (SUM / COUNT / GROUP BY)",
+    "url": "https://app.notion.com/p/2f3a6b8522df80dea445e48968a02ef1",
+    "category": "ABAP"
+  },
+  {
+    "title": "문자열 결합·분리·변환 — CONCATENATE·SPLIT·WRITE TO",
+    "url": "https://app.notion.com/p/2f5a6b8522df8011bf6cc1828bbf1977",
+    "category": "ABAP"
+  },
+  {
+    "title": "Field Symbol — ASSIGN·ASSIGN COMPONENT·LOOP ASSIGNING",
+    "url": "https://app.notion.com/p/2f6a6b8522df80468934da5c6564f187",
+    "category": "ABAP"
+  },
+  {
+    "title": "도메인 설명값 조회 — DD_DOMVALUES_GET",
+    "url": "https://app.notion.com/p/2ffa6b8522df80ef8093e1c5c6528930",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 설명값 채우기 — LOOP·자재 텍스트",
+    "url": "https://app.notion.com/p/304a6b8522df80ef979ffca11e9d9381",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 존재 확인·값 읽기 — LINE_EXISTS·테이블 표현식",
+    "url": "https://app.notion.com/p/354a6b8522df8029b934f100ea3ceb53",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 이진 검색 — BINARY SEARCH·정렬·Header Line",
+    "url": "https://app.notion.com/p/2c4a6b8522df802db469c5d6cace73d0",
+    "category": "ABAP"
+  },
+  {
+    "title": "엑셀 Excel 업로드·템플릿 양식 다운로드 — TOP·SMW0·파일 선택·ALSM_EXCEL_TO_INTERNAL_TABLE·ALV 반영",
+    "url": "https://app.notion.com/p/3eca6b8522df81b2bfb2c98b1221a95c",
+    "category": "ABAP"
+  },
+  {
+    "title": "FORM 인자 전달 — USING·CHANGING 실습",
+    "url": "https://app.notion.com/p/2c7a6b8522df80e7adc5c55f0e12b482",
+    "category": "ABAP"
+  },
+  {
+    "title": "FORM 호출·FCAT 생성 — PERFORM USING·CHANGING",
+    "url": "https://app.notion.com/p/2cca6b8522df80c88b97ed6a6805298b",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Module — 호출·구현 예제",
+    "url": "https://app.notion.com/p/2d2a6b8522df80a5b778c49361608ef7",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Group·Function Module 생성 — SE80·SE37",
+    "url": "https://app.notion.com/p/2d2a6b8522df80bbbb32e0c6856d8428",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Module 호출 주의 — 전역 데이터·Function Group",
+    "url": "https://app.notion.com/p/2d9a6b8522df8009a48dc5d9b2c1556c",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Module로 ITAB 전달 — 테이블 인자",
+    "url": "https://app.notion.com/p/2d9a6b8522df801d8b3aec6a2e18f78f",
+    "category": "ABAP"
+  },
+  {
+    "title": "Class에 SELECT-OPTIONS 전달 — RANGE·메서드 인자",
+    "url": "https://app.notion.com/p/2d9a6b8522df8032aaf3ece1cb5fe890",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Module에 SELECT-OPTIONS 전달 — RANGE 인자",
+    "url": "https://app.notion.com/p/2d9a6b8522df8047b8c9c9deb7fb4723",
+    "category": "ABAP"
+  },
+  {
+    "title": "Global Class 생성 — SE24·Instance·Static",
+    "url": "https://app.notion.com/p/2d9a6b8522df805bb7acedee8c47fa61",
+    "category": "ABAP"
+  },
+  {
+    "title": "Function Module을 Class로 변경 — 메서드·인자 매핑",
+    "url": "https://app.notion.com/p/2d9a6b8522df80e5a513fe65f2fbdea0",
+    "category": "ABAP"
+  },
+  {
+    "title": "트랜잭션 기본값 전달 — F1·Parameter ID 확인",
+    "url": "https://app.notion.com/p/2dea6b8522df807e825dcc92891c6454",
+    "category": "ABAP"
+  },
+  {
+    "title": "CALL FUNCTION 'SAPGUI_SET_FUNCTIONCODE'",
+    "url": "https://app.notion.com/p/2e8a6b8522df800eb760c73d074e1640",
+    "category": "ABAP"
+  },
+  {
+    "title": "브라우저·URL 열기 — CALL_BROWSER·지도 링크",
+    "url": "https://app.notion.com/p/2f0a6b8522df80048772c515391de799",
+    "category": "ABAP"
+  },
+  {
+    "title": "확인 팝업 — POPUP_TO_CONFIRM·예·아니오",
+    "url": "https://app.notion.com/p/2f0a6b8522df80789347d289a6e67638",
+    "category": "ABAP"
+  },
+  {
+    "title": "프로그램 간 값 전달 — ABAP Memory·SAP Memory·EXPORT·IMPORT",
+    "url": "https://app.notion.com/p/2f5a6b8522df80c48980c42835bc0de1",
+    "category": "ABAP"
+  },
+  {
+    "title": "다른 리포트 실행 — SUBMIT·조회조건·메모리 전달",
+    "url": "https://app.notion.com/p/3a4a6b8522df8077a358db8d7877bab8",
+    "category": "ABAP"
+  },
+  {
+    "title": "🔁 BDC — SHDB 녹화·화면 필드·OKCODE",
+    "url": "https://app.notion.com/p/3eca6b8522df810a9f09e6e2dc34c275",
+    "category": "ABAP"
+  },
+  {
+    "title": "SE11 테이블 생성 — 필드·키·도메인·데이터 엘리먼트",
+    "url": "https://app.notion.com/p/2aaa6b8522df80f099f4ef3198d931b7",
+    "category": "ABAP"
+  },
+  {
+    "title": "도메인 생성 — Fixed Value·데이터 엘리먼트·테이블 연결",
+    "url": "https://app.notion.com/p/2aea6b8522df80d7a48cc38aa0400c0d",
+    "category": "ABAP"
+  },
+  {
+    "title": "Value Table·Check Table 설정 — 외래 키·값 검증",
+    "url": "https://app.notion.com/p/2aea6b8522df80d88349e39504421b16",
+    "category": "ABAP"
+  },
+  {
+    "title": "Structure 생성 — INCLUDE·타임스탬프 필드",
+    "url": "https://app.notion.com/p/2afa6b8522df80a7963af8b3006bd2ad",
+    "category": "ABAP"
+  },
+  {
+    "title": "Database View 생성 — SE11·JOIN·필드 선택",
+    "url": "https://app.notion.com/p/2afa6b8522df80b2bad1d1e0b5cdaba4",
+    "category": "ABAP"
+  },
+  {
+    "title": "Text Table 조회·확인 — 언어별 설명 테이블",
+    "url": "https://app.notion.com/p/2b0a6b8522df8061a17cee18ae50c297",
+    "category": "ABAP"
+  },
+  {
+    "title": "TMG 유지보수 화면 생성 — Maintenance View·SM30",
+    "url": "https://app.notion.com/p/2b0a6b8522df8086a8e1ce740e3dc82e",
+    "category": "ABAP"
+  },
+  {
+    "title": "Append Structure QUAN / CURR 필드",
+    "url": "https://app.notion.com/p/2b0a6b8522df80a0a0efc86896444d82",
+    "category": "ABAP"
+  },
+  {
+    "title": "View Cluster — SE54 생성 실습",
+    "url": "https://app.notion.com/p/2b1a6b8522df809abbc3d6a16a21cfeb",
+    "category": "ABAP"
+  },
+  {
+    "title": "Text Table 찾기 — 도메인·Value Table·SE11",
+    "url": "https://app.notion.com/p/3e6a6b8522df816291a6f797bf9dbccf",
+    "category": "ABAP"
+  },
+  {
+    "title": "debugger 디버깅",
+    "url": "https://app.notion.com/p/2b5a6b8522df80198358f3ccee2e9894",
+    "category": "ABAP"
+  },
+  {
+    "title": "MESSAGE CLASS",
+    "url": "https://app.notion.com/p/2bca6b8522df80759e06fdcce0b8228e",
+    "category": "ABAP"
+  },
+  {
+    "title": "OData — On-Premise 구현 방식",
+    "url": "https://app.notion.com/p/303a6b8522df80c48e67c4d7d7876c52",
+    "category": "ABAP"
+  },
+  {
+    "title": "배치잡 생성·조회 — Batch Job·SM36·SM37",
+    "url": "https://app.notion.com/p/33ba6b8522df8071af35fd5c9195fab8",
+    "category": "ABAP"
+  },
+  {
+    "title": "채번 생성 — Number Range·SNRO·NUMBER_GET_NEXT",
+    "url": "https://app.notion.com/p/33ba6b8522df80d7b0e3ebdb8d641ea4",
+    "category": "ABAP"
+  },
+  {
+    "title": "Enhancement",
+    "url": "https://app.notion.com/p/398a6b8522df8096869fdf0aad055751",
+    "category": "ABAP"
+  },
+  {
+    "title": "CTS 요청·Task 생성 — SE09·전송 번호",
+    "url": "https://app.notion.com/p/2f6a6b8522df8084ab15e207911a5322",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP 코드 다운로드 — Report·Module Pool·INCLUDE",
+    "url": "https://app.notion.com/p/2d9a6b8522df80c4a893cc8879c26bed",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 캐시·버퍼 초기화 — BALVBUFDEL",
+    "url": "https://app.notion.com/p/2e2a6b8522df80f3900fd2afce8ce550",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP CHAR / NUMC / INT / FLOAT 차이",
+    "url": "https://app.notion.com/p/2a8a6b8522df80019699c433fe9f9c1e",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP 단축키 모음",
+    "url": "https://app.notion.com/p/2aba6b8522df80e5944fe6b10b86c23d",
+    "category": "ABAP"
+  },
+  {
+    "title": "객체 이름·네임스페이스 — Z·Y·수업 메모",
+    "url": "https://app.notion.com/p/2aea6b8522df810bb9e5e1c11b61c69f",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP / 테이블 기본 개념 정리, PK",
+    "url": "https://app.notion.com/p/2aea6b8522df81fcaa20fa3f3f256612",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP 자주 쓰는 기본 데이터 타입",
+    "url": "https://app.notion.com/p/2b2a6b8522df802f8f09d6ba8ccc574a",
+    "category": "ABAP"
+  },
+  {
+    "title": "Global Type,  Local Type",
+    "url": "https://app.notion.com/p/2b2a6b8522df805ca152e848b927cc2f",
+    "category": "ABAP"
+  },
+  {
+    "title": "프로그램 생성·DATA 선언 — SE38·SE80",
+    "url": "https://app.notion.com/p/2b2a6b8522df8063b0a6c54c7a8e85c1",
+    "category": "ABAP"
+  },
+  {
+    "title": "기본 타입 선언 실습 — C·N·P",
+    "url": "https://app.notion.com/p/2b2a6b8522df809f834be8a11ee96599",
+    "category": "ABAP"
+  },
+  {
+    "title": "DDIC 복습 — 개인 실습",
+    "url": "https://app.notion.com/p/2b3a6b8522df80ddb166e6dddbadf4ed",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 만들기 - 실습",
+    "url": "https://app.notion.com/p/2b5a6b8522df803e95c3ed74eada394f",
+    "category": "ABAP"
+  },
+  {
+    "title": "ITAB 인터널 테이블, 인터널 스트럭처",
+    "url": "https://app.notion.com/p/2b6a6b8522df80b288eae965a811d71e",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP Internal Table 5대 명령어",
+    "url": "https://app.notion.com/p/2b6a6b8522df80e98684cf2adbbb8026",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP IF 문 & 논리연산자 & TRUE/FALSE 정리",
+    "url": "https://app.notion.com/p/2b7a6b8522df802ab0bec55db69aaa68",
+    "category": "ABAP"
+  },
+  {
+    "title": "SY-INDEX",
+    "url": "https://app.notion.com/p/2b9a6b8522df800fb61dcf7638490956",
+    "category": "ABAP"
+  },
+  {
+    "title": "IS INITIAL",
+    "url": "https://app.notion.com/p/2b9a6b8522df80cbbb44fcb036b9ec73",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP TYPES",
+    "url": "https://app.notion.com/p/2c4a6b8522df803b955dce2570314d12",
+    "category": "ABAP"
+  },
+  {
+    "title": "문자열 비교 연산자 CS, CP",
+    "url": "https://app.notion.com/p/2cea6b8522df8041be8beb9994ac100f",
+    "category": "ABAP"
+  },
+  {
+    "title": "패키지 만들기",
+    "url": "https://app.notion.com/p/2cea6b8522df8051a64df9e29426acb2",
+    "category": "ABAP"
+  },
+  {
+    "title": "프로그램 지우고 copy",
+    "url": "https://app.notion.com/p/2d8a6b8522df802cac31d6a8e52a45b3",
+    "category": "ABAP"
+  },
+  {
+    "title": "macro",
+    "url": "https://app.notion.com/p/2dca6b8522df80efa95ed1add884d05e",
+    "category": "ABAP"
+  },
+  {
+    "title": "조건부 종료 — CHECK·EXIT·CONTINUE",
+    "url": "https://app.notion.com/p/2e3a6b8522df8013ba76d7b8117503e4",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP dictionary 핵심 개념 정리",
+    "url": "https://app.notion.com/p/2aea6b8522df81688ac9ec40ac902416",
+    "category": "ABAP"
+  },
+  {
+    "title": "Database View",
+    "url": "https://app.notion.com/p/2afa6b8522df806fae27ffa673eafbb7",
+    "category": "ABAP"
+  },
+  {
+    "title": "Structure 개념 — 구조체·INCLUDE·APPEND",
+    "url": "https://app.notion.com/p/2afa6b8522df80a6b959d5d83849ab26",
+    "category": "ABAP"
+  },
+  {
+    "title": "외래 키(Foreign Key)",
+    "url": "https://app.notion.com/p/2afa6b8522df80ea939ae002495c112d",
+    "category": "ABAP"
+  },
+  {
+    "title": "CBO(Custom Business Object)란?",
+    "url": "https://app.notion.com/p/2b0a6b8522df80748642ff7b2449bb94",
+    "category": "ABAP"
+  },
+  {
+    "title": "서치헬프",
+    "url": "https://app.notion.com/p/2b1a6b8522df8018a97edf96751154e5",
+    "category": "ABAP"
+  },
+  {
+    "title": "View Cluster",
+    "url": "https://app.notion.com/p/2b1a6b8522df804dab55de5d25263afa",
+    "category": "ABAP"
+  },
+  {
+    "title": "View Field P/S/H",
+    "url": "https://app.notion.com/p/2b2a6b8522df804d8352efa32a00a5b1",
+    "category": "ABAP"
+  },
+  {
+    "title": "join 헷갈림",
+    "url": "https://app.notion.com/p/2bda6b8522df80348e17d9a35dfc2e8f",
+    "category": "ABAP"
+  },
+  {
+    "title": "JOIN에서 왜 여러 개의 Key(필드)를 연결할까?",
+    "url": "https://app.notion.com/p/2bfa6b8522df8048ad37da4a473be4fc",
+    "category": "ABAP"
+  },
+  {
+    "title": "LOOP AT SCREEN",
+    "url": "https://app.notion.com/p/2caa6b8522df80348653c6da4fcf5c02",
+    "category": "ABAP"
+  },
+  {
+    "title": "Container, Grid",
+    "url": "https://app.notion.com/p/2caa6b8522df80639f83c1eca62cf06f",
+    "category": "ABAP"
+  },
+  {
+    "title": "클래스·인스턴스 메서드 — ALV 수업 예제",
+    "url": "https://app.notion.com/p/2cba6b8522df80e6b9b6d6b5e8706c18",
+    "category": "ABAP"
+  },
+  {
+    "title": "TYPE·LIKE — 인자 선언과 값 전달",
+    "url": "https://app.notion.com/p/2d9a6b8522df80568403ea3a86367959",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV FCAT / LAYOUT 중복 생성 문제",
+    "url": "https://app.notion.com/p/2daa6b8522df80ccbea6ff7ef4df5ef9",
+    "category": "ABAP"
+  },
+  {
+    "title": "ABAP Transaction / COMMIT WORK / ROLLBACK WORK 정리",
+    "url": "https://app.notion.com/p/2dca6b8522df80169c8bfa23f01d8d15",
+    "category": "ABAP"
+  },
+  {
+    "title": "ALV 변경값을 ITAB에 반영 — CHECK_CHANGED_DATA",
+    "url": "https://app.notion.com/p/2e3a6b8522df80299bc9ebb6db87355e",
+    "category": "ABAP"
+  },
+  {
+    "title": "Instance Method 개념 — 객체 생성·인스턴스 호출",
+    "url": "https://app.notion.com/p/2e3a6b8522df809385eac6bcbfee3935",
+    "category": "ABAP"
+  },
+  {
+    "title": "Static Method 개념 — 클래스 직접 호출",
+    "url": "https://app.notion.com/p/2e3a6b8522df80a6bbdeeb2352feae29",
+    "category": "ABAP"
+  },
+  {
+    "title": "Module Pool — 화면 프로그램 개념",
+    "url": "https://app.notion.com/p/2e6a6b8522df8093a327d69ae1c7b08e",
+    "category": "ABAP"
+  },
+  {
+    "title": "OPTIONAL",
+    "url": "https://app.notion.com/p/2e6a6b8522df80be8da6d9c57f830499",
+    "category": "ABAP"
+  },
+  {
+    "title": "CALL FUNCTION / EXPORTING / IMPORTING 개념",
+    "url": "https://app.notion.com/p/2e7a6b8522df806481e6ce37c5f75f68",
+    "category": "ABAP"
+  },
+  {
+    "title": "UPDATE · INSERT · APPEND · MODIFY 차이 & 활용도 (ABAP 실무 기준)",
+    "url": "https://app.notion.com/p/2f1a6b8522df8008b7e7d005f3ef8b12",
+    "category": "ABAP"
+  },
+  {
+    "title": "SAP 개발 용어 — SAP GUI·ADT·Fiori",
+    "url": "https://app.notion.com/p/302a6b8522df806ca984d10c1925f161",
+    "category": "ABAP"
+  },
+  {
+    "title": "SD — 조직·마스터·판매부터 수금까지",
+    "url": "https://app.notion.com/p/31aa6b8522df8018aff8fccca167ad61",
+    "category": "ABAP"
+  },
+  {
+    "title": "MM — 조직·구매·입고·송장 실습",
+    "url": "https://app.notion.com/p/31ba6b8522df80ae9e50e171fd8fd52c",
+    "category": "ABAP"
+  },
+  {
+    "title": "PP — 마스터·생산계획·실습",
+    "url": "https://app.notion.com/p/31da6b8522df8024a212c3cd316cf26f",
+    "category": "ABAP"
+  },
+  {
+    "title": "생산계획",
+    "url": "https://app.notion.com/p/31ea6b8522df8009b17dcd4ca126322f",
+    "category": "ABAP"
+  },
+  {
+    "title": "PP 용어 — BOM·Routing·Work Center",
+    "url": "https://app.notion.com/p/31ea6b8522df8014af81ce4fc14bc37b",
+    "category": "ABAP"
+  },
+  {
+    "title": "생산관리 기본 개요 4개의 Master Data",
+    "url": "https://app.notion.com/p/31ea6b8522df80309e7bc6c74d449473",
+    "category": "ABAP"
+  },
+  {
+    "title": "PP 실습 — 자재·계획·생산오더",
+    "url": "https://app.notion.com/p/31ea6b8522df80439566d59223d4c18d",
+    "category": "ABAP"
+  },
+  {
+    "title": "PP 실습 — 사용자 권한",
+    "url": "https://app.notion.com/p/31ea6b8522df808d8976fdfae7b50ff9",
+    "category": "ABAP"
+  },
+  {
+    "title": "SAP 프로그램의 이벤트",
+    "url": "https://app.notion.com/p/2e2a6b8522df802aa4afd3370a52d62b",
+    "category": "ABAP"
+  },
+  {
+    "title": "Selection-screen 실행 순서",
+    "url": "https://app.notion.com/p/2c6a6b8522df8007984ff202f8568263",
+    "category": "ABAP"
+  },
+  {
+    "title": "INITIALIZATION — 조회조건 초기화 개념",
+    "url": "https://app.notion.com/p/2d3a6b8522df805cb3e5c495f9656971",
+    "category": "ABAP"
+  },
+  {
+    "title": "PBO·PAI — 화면 표시·입력 처리 흐름",
+    "url": "https://app.notion.com/p/2caa6b8522df80989308ca60e2f19b42",
+    "category": "ABAP"
+  },
+  {
+    "title": "DATA_CHANGED — 변경 감지 개념",
+    "url": "https://app.notion.com/p/2e3a6b8522df801c9afec01b0e9edee3",
+    "category": "ABAP"
+  },
+  {
+    "title": "DOUBLE_CLICK — 행 더블클릭 개념",
+    "url": "https://app.notion.com/p/2e3a6b8522df80e1a884d6744d6ae959",
+    "category": "ABAP"
+  },
+  {
+    "title": "GitHub ABAP 따라하기 — 전체 코드·화면·종료 흐름",
+    "url": "https://app.notion.com/p/3f1a6b8522df805f9aede7f41a1332fd",
+    "category": "ABAP"
+  },
+  {
+    "title": "기초 — 문법·타입·개발환경",
+    "url": "https://app.notion.com/p/3eca6b8522df81458a83fa0a49875fc5",
+    "category": "ABAP"
+  },
+  {
+    "title": "개념 — DDIC·화면 흐름·클래스·업무",
+    "url": "https://app.notion.com/p/3eca6b8522df81338325de33f03621c4",
+    "category": "ABAP"
+  },
+  {
+    "title": "실무 코드 — 기능별 적용 순서",
+    "url": "https://app.notion.com/p/3eca6b8522df8142b33fe79a6851cd1f",
+    "category": "ABAP"
+  },
+  {
+    "title": "휴지통 — 빈 글·통합된 중복·이전 메뉴",
+    "url": "https://app.notion.com/p/3eca6b8522df8151aa12cfd3d9e246eb",
+    "category": "ABAP"
+  },
+  {
+    "title": "00 시작 — RAP 전체 구조·용어·설정",
+    "url": "https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de",
+    "category": "RAP"
+  },
+  {
+    "title": "01 데이터·CDS — 테이블부터 검색까지",
+    "url": "https://app.notion.com/p/3e6a6b8522df81eb8227f772adc128d6",
+    "category": "RAP"
+  },
+  {
+    "title": "02 BO·Behavior — CRUD·EML·검증",
+    "url": "https://app.notion.com/p/3e6a6b8522df817c9539cb0d26b5d00d",
+    "category": "RAP"
+  },
+  {
+    "title": "03 Fiori·서비스 — 화면·OData·Draft",
+    "url": "https://app.notion.com/p/3e6a6b8522df812dad2ec270b76f8346",
+    "category": "RAP"
+  },
+  {
+    "title": "04 프로젝트 — 구매·입고·회계와 전체 코드",
+    "url": "https://app.notion.com/p/3e6a6b8522df81ca8c2bc6980b3be47d",
+    "category": "RAP"
+  },
+  {
+    "title": "05 수업 원본·캡처",
+    "url": "https://app.notion.com/p/3e6a6b8522df81499cdac11b61fa544b",
+    "category": "RAP"
+  },
+  {
+    "title": "읽기 전용 BO — Fiori 화면 처음 띄우기",
+    "url": "https://app.notion.com/p/3b6a6b8522df80c290a0f1d2306f8cb7",
+    "category": "RAP"
+  },
+  {
+    "title": "Behavior — Create·Update·Delete",
+    "url": "https://app.notion.com/p/3b6a6b8522df80b5b7ecd78234c113ff",
+    "category": "RAP"
+  },
+  {
+    "title": "EML — READ·CREATE·UPDATE·DELETE 예제",
+    "url": "https://app.notion.com/p/3b6a6b8522df803d9395cb786ffb6100",
+    "category": "RAP"
+  },
+  {
+    "title": "Action·메시지 — 버튼·결과·오류",
+    "url": "https://app.notion.com/p/3b6a6b8522df80b3bc18cda7f28435bd",
+    "category": "RAP"
+  },
+  {
+    "title": "Determination·Validation — 자동 채움·검증",
+    "url": "https://app.notion.com/p/3b6a6b8522df8021916eca9f22b8c629",
+    "category": "RAP"
+  },
+  {
+    "title": "권한·Feature Control — 버튼·필드 제어",
+    "url": "https://app.notion.com/p/3b6a6b8522df80ed80d6ddbcba3bc2e5",
+    "category": "RAP"
+  },
+  {
+    "title": "Composite BO — 부모·자식 구조",
+    "url": "https://app.notion.com/p/3b6a6b8522df80c28a91cb409e5eea4b",
+    "category": "RAP"
+  },
+  {
+    "title": "CDS·View — 기본·설계·값도움·검색",
+    "url": "https://app.notion.com/p/3b6a6b8522df80f5abe4ddeef70ee835",
+    "category": "RAP"
+  },
+  {
+    "title": "데이터 계층 — UUID·감사필드·금액·Lock",
+    "url": "https://app.notion.com/p/3b6a6b8522df80a3a8e7c9a7075a4618",
+    "category": "RAP"
+  },
+  {
+    "title": "📋 03 기초 조회화면 — SCARR·TOP·SET_LAYOUT·CALL SCREEN 전체 틀",
+    "url": "https://app.notion.com/p/3e8a6b8522df8155b6dcd1da6fddca9c",
+    "category": "ABAP"
+  },
+  {
+    "title": "RAP 구축 지도 — 객체 순서와 사용 위치",
+    "url": "https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85",
+    "category": "RAP"
+  },
+  {
+    "title": "GitHub 신문법 수업 · VALUE·OPTIONAL·COND·JOIN @ITAB",
+    "url": "https://github.com/sherlock0105/ABAP-STUDY/blob/master/ZC505_SUB_10/zc505rlect13/zc505rlect13.html",
+    "category": "ABAP"
+  },
+  {
+    "title": "GitHub 신문법 ALV 실습 · BASE·ASSIGNING·변경 표시",
+    "url": "https://github.com/sherlock0105/ABAP-STUDY/blob/master/ZC505_SUB_10/zc505rexam02/zc505rexam02_f01.html",
+    "category": "ABAP"
+  }
+]

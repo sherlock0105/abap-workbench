@@ -1,0 +1,28 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"3e6a6b8522df81998314f08175fdd7de\",\"title\":\"🧭 00 시작 — RAP 전체 구조·용어·설정\",\"text\":\"Here is the result of \\\"fetch\\\" for the Page with URL https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de as of 2026-09-27T13:44:05.695Z:\\n<page url=\\\"https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de\\\" icon=\\\"🧭\\\">\\n<ancestor-path>\\n<parent-page url=\\\"https://app.notion.com/p/3a3a6b8522df80cdb505c85b6e8ca52e\\\" title=\\\"RAP 심화과정 2기 \\\"/>\\n<ancestor-2-page url=\\\"https://app.notion.com/p/31fa6b8522df80ccb077e7d356a90fb0\\\" title=\\\"SAP-CODE 1기\\\"/>\\n</ancestor-path>\\n<properties>\\n{\\\"title\\\":\\\"00 시작 — RAP 전체 구조·용어·설정\\\"}\\n</properties>\\n<iconMetadata>{\\\"type\\\":\\\"emoji\\\",\\\"emoji\\\":\\\"🧭\\\"}</iconMetadata>\\n<content>\\n<callout icon=\\\"🧭\\\" color=\\\"blue_bg\\\">\\n\\tRAP 개요 → 구축 지도 → 용어 순으로 시작하세요. 이미 아는 부분은 바로 건너뛰면 됩니다.\\n</callout>\\n## 지금 필요한 내용\\n- **RAP을 처음 접함** → <mention-page url=\\\"https://app.notion.com/p/3b4a6b8522df805b9ed7cbd2cf4bacbf\\\">RAP이 뭔지 왜 배우는지</mention-page>\\n- **객체를 어떤 순서로 만드나** → <mention-page url=\\\"https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85\\\">RAP 구축 지도 — 객체 순서와 사용 위치</mention-page>\\n- **용어가 헷갈림** → <mention-page url=\\\"https://app.notion.com/p/3a7a6b8522df808aa29ed1da345676a9\\\">RAP 용어 사전 — Annotation·BO·Draft</mention-page>\\n- **새 ABAP 문법이 낯섦** → <mention-page url=\\\"https://app.notion.com/p/3b4a6b8522df809388f1c7114deb5e6b\\\">RAP 전에 깔고 가는 ABAP 최신 문법</mention-page>\\n- **ADT 초기 설정** → <mention-page url=\\\"https://app.notion.com/p/3a7a6b8522df8078acbdc2d17fc578ee\\\">ADT·RAP 기초 설정</mention-page>\\n## 화면으로 확인\\n- [Eclipse 설치 캡처](https://app.notion.com/p/3a3a6b8522df80ba8248de98bd7c43a4)\\n## 원문\\n<page url=\\\"https://app.notion.com/p/3b4a6b8522df805b9ed7cbd2cf4bacbf\\\">RAP이 뭔지 왜 배우는지</page>\\n<page url=\\\"https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85\\\">RAP 구축 지도 — 객체 순서와 사용 위치</page>\\n<page url=\\\"https://app.notion.com/p/3a7a6b8522df808aa29ed1da345676a9\\\">RAP 용어 사전 — Annotation·BO·Draft</page>\\n<page url=\\\"https://app.notion.com/p/3b4a6b8522df809388f1c7114deb5e6b\\\">RAP 전에 깔고 가는 ABAP 최신 문법</page>\\n<page url=\\\"https://app.notion.com/p/3a7a6b8522df8078acbdc2d17fc578ee\\\">ADT·RAP 기초 설정</page>\\n</content>\\n</page>\",\"url\":\"https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de?pvs=204\",\"metadata\":{\"type\":\"page\"},\"cover\":null,\"icon\":{\"type\":\"emoji\",\"emoji\":\"🧭\"},\"path\":\"SAP-CODE 1기 / RAP 심화과정 2기\",\"verification\":{\"state\":\"unverified\"},\"page_last_edited_at\":\"2026-09-25T10:21:01.475Z\"}"
+    }
+  ],
+  "structuredContent": {
+    "id": "3e6a6b8522df81998314f08175fdd7de",
+    "title": "🧭 00 시작 — RAP 전체 구조·용어·설정",
+    "text": "Here is the result of \"fetch\" for the Page with URL https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de as of 2026-09-27T13:44:05.695Z:\n<page url=\"https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de\" icon=\"🧭\">\n<ancestor-path>\n<parent-page url=\"https://app.notion.com/p/3a3a6b8522df80cdb505c85b6e8ca52e\" title=\"RAP 심화과정 2기 \"/>\n<ancestor-2-page url=\"https://app.notion.com/p/31fa6b8522df80ccb077e7d356a90fb0\" title=\"SAP-CODE 1기\"/>\n</ancestor-path>\n<properties>\n{\"title\":\"00 시작 — RAP 전체 구조·용어·설정\"}\n</properties>\n<iconMetadata>{\"type\":\"emoji\",\"emoji\":\"🧭\"}</iconMetadata>\n<content>\n<callout icon=\"🧭\" color=\"blue_bg\">\n\tRAP 개요 → 구축 지도 → 용어 순으로 시작하세요. 이미 아는 부분은 바로 건너뛰면 됩니다.\n</callout>\n## 지금 필요한 내용\n- **RAP을 처음 접함** → <mention-page url=\"https://app.notion.com/p/3b4a6b8522df805b9ed7cbd2cf4bacbf\">RAP이 뭔지 왜 배우는지</mention-page>\n- **객체를 어떤 순서로 만드나** → <mention-page url=\"https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85\">RAP 구축 지도 — 객체 순서와 사용 위치</mention-page>\n- **용어가 헷갈림** → <mention-page url=\"https://app.notion.com/p/3a7a6b8522df808aa29ed1da345676a9\">RAP 용어 사전 — Annotation·BO·Draft</mention-page>\n- **새 ABAP 문법이 낯섦** → <mention-page url=\"https://app.notion.com/p/3b4a6b8522df809388f1c7114deb5e6b\">RAP 전에 깔고 가는 ABAP 최신 문법</mention-page>\n- **ADT 초기 설정** → <mention-page url=\"https://app.notion.com/p/3a7a6b8522df8078acbdc2d17fc578ee\">ADT·RAP 기초 설정</mention-page>\n## 화면으로 확인\n- [Eclipse 설치 캡처](https://app.notion.com/p/3a3a6b8522df80ba8248de98bd7c43a4)\n## 원문\n<page url=\"https://app.notion.com/p/3b4a6b8522df805b9ed7cbd2cf4bacbf\">RAP이 뭔지 왜 배우는지</page>\n<page url=\"https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85\">RAP 구축 지도 — 객체 순서와 사용 위치</page>\n<page url=\"https://app.notion.com/p/3a7a6b8522df808aa29ed1da345676a9\">RAP 용어 사전 — Annotation·BO·Draft</page>\n<page url=\"https://app.notion.com/p/3b4a6b8522df809388f1c7114deb5e6b\">RAP 전에 깔고 가는 ABAP 최신 문법</page>\n<page url=\"https://app.notion.com/p/3a7a6b8522df8078acbdc2d17fc578ee\">ADT·RAP 기초 설정</page>\n</content>\n</page>",
+    "url": "https://app.notion.com/p/3e6a6b8522df81998314f08175fdd7de?pvs=204",
+    "metadata": {
+      "type": "page"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🧭"
+    },
+    "path": "SAP-CODE 1기 / RAP 심화과정 2기",
+    "verification": {
+      "state": "unverified"
+    },
+    "page_last_edited_at": "2026-09-25T10:21:01.475Z"
+  },
+  "isError": false
+}

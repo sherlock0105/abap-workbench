@@ -1,0 +1,248 @@
+[
+  {
+    "order": 1,
+    "id": "3aba6b8522df8067bc1fd95c92749e85",
+    "task": "어느 객체에 코드를 넣는지 정하기",
+    "location": "ADT: DB Table / Data Definition / Metadata Extension / Service Definition / Service Binding / Behavior Definition / Behavior Pool",
+    "steps": [
+      "조회 트랙(Table→CDS→Projection→MDE→서비스)과 변경 트랙(Root BDEF→Pool→Projection BDEF)을 나눠 확인",
+      "기능별 위치 표에서 값도움·필드·버튼·검증의 담당 객체를 찾기"
+    ],
+    "check": "기능 요청을 담당 객체명과 연결할 수 있다",
+    "relatedIds": [
+      "3aca6b8522df806e9585fde3268641df"
+    ],
+    "projectSection": "SKA1·T030·MKPF/MSEG 각각의 BDEF 전체",
+    "sourceTitle": "RAP 구축 지도 — 객체 순서와 사용 위치",
+    "sourceUrl": "https://app.notion.com/p/3aba6b8522df8067bc1fd95c92749e85?pvs=204",
+    "sourceEditedAt": "2026-09-27T13:41:00.798Z",
+    "snippet": {
+      "sourceBlockIndex": 7,
+      "language": "abap",
+      "excerpt": "managed implementation in class zbp_r_std_a10 unique;\nstrict ( 2 );\n\ndefine behavior for ZR_STD_A10 alias Student\npersistent table zta10std               \" ← DB 테이블 연결(저장 지점)\nlock master                             \" ← Lock(동시수정 방지)\netag master LastChangedAt               \" ← ETag(변경 충돌 감지, 감사필드 재활용)\nauthorization master ( instance )       \" ← 권한 관리\n{\n  create;\n  update;\n  delete;",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 2,
+    "id": "3b6a6b8522df80c290a0f1d2306f8cb7",
+    "task": "Fiori 조회 화면 처음 띄우기",
+    "location": "Table zta10emp_new → CDS ZI_EMP_NEW_A10/ZR_EMP_NEW_A10/ZC_EMP_NEW_A10 → MDE → service ZUI_A10_EMP → Binding",
+    "steps": [
+      "선행 타입·테이블·CDS 객체를 활성화",
+      "Projection에 allowExtensions를 선언하고 MDE 목록·상세 필드 배치",
+      "Service Definition에서 Projection expose 후 Binding Publish→Preview"
+    ],
+    "check": "Preview에서 사원 목록과 상세정보가 보인다",
+    "relatedIds": [
+      "3d4a6b8522df8074843ff87c1e036fb6",
+      "3c0a6b8522df80eb875fcd2991040643"
+    ],
+    "projectSection": "프로젝트 계층별 요약의 Data/View/Metadata 계층",
+    "sourceTitle": "읽기 전용 BO — Fiori 화면 처음 띄우기",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df80c290a0f1d2306f8cb7?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:30.911Z",
+    "snippet": {
+      "sourceBlockIndex": 6,
+      "language": "abap",
+      "excerpt": "@EndUserText.label: '[A10] 사원 Service Definition'\ndefine service ZUI_A10_EMP {\n  expose ZC_EMP_NEW_A10 as Employee;\n}\n",
+      "isExcerpt": false
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 3,
+    "id": "3b6a6b8522df80f5abe4ddeef70ee835",
+    "task": "코드 옆 텍스트·F4 값도움·검색 추가",
+    "location": "Text View / Root·Projection CDS의 association·valueHelpDefinition·Search annotations",
+    "steps": [
+      "언어 조건을 둔 Text View와 association을 연결",
+      "Value Help entity와 additionalBinding을 필요한 필드에 설정",
+      "검색 대상 필드와 퍼지 검색 옵션 확인"
+    ],
+    "check": "코드명 텍스트 표시, F4 선택값 반영, 검색어로 원하는 행을 찾는다",
+    "relatedIds": [
+      "3b6a6b8522df80a3a8e7c9a7075a4618"
+    ],
+    "projectSection": "프로젝트 계층별 요약: Root/Projection/Text View",
+    "sourceTitle": "🟦 CDS·View — 기본·설계·값도움·검색",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df80f5abe4ddeef70ee835?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:20:24.739Z",
+    "snippet": {
+      "sourceBlockIndex": 12,
+      "language": "abap",
+      "excerpt": "@Consumption.valueHelpDefinition: [\n  { entity: { name: 'ZI_GESCH_A10', element: 'Gesch' } }\n]\nGesch,\n",
+      "isExcerpt": false
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 4,
+    "id": "3b6a6b8522df80b5b7ecd78234c113ff",
+    "task": "Create·Update·Delete 버튼과 저장 연결",
+    "location": "ZR_EMP_NEW_A10 Root BDEF / zbp_r_emp_new_a10 Behavior Pool / ZC_EMP_NEW_A10 Projection BDEF",
+    "steps": [
+      "Root BDEF의 persistent table·mapping·CRUD를 선언",
+      "구현 Pool을 생성/활성화",
+      "Projection BDEF에 use create/update/delete를 노출"
+    ],
+    "check": "Fiori에서 생성·수정·삭제가 서비스에 허용된 범위대로 동작한다",
+    "projectSection": "1-0 SKA1 BDEF 전체 / 2-0 T030 BDEF 전체 / 3-0 MKPF/MSEG BDEF 전체",
+    "sourceTitle": "Behavior — Create·Update·Delete",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df80b5b7ecd78234c113ff?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:33.423Z",
+    "snippet": {
+      "sourceBlockIndex": 0,
+      "language": "abap",
+      "excerpt": "managed implementation in class zbp_r_emp_new_a10 unique;\nstrict ( 2 );\n\ndefine behavior for ZR_EMP_NEW_A10\npersistent table zta10emp_new\nlock master\nauthorization master ( instance )\n{\n  create;\n  update;\n  delete;\n",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 5,
+    "id": "3b6a6b8522df803d9395cb786ffb6100",
+    "task": "EML로 BO 읽기·생성·수정·삭제",
+    "location": "Behavior Pool handler의 READ/MODIFY ENTITIES; 외부 실행용 클래스와 BO 내부 LOCAL MODE 구분",
+    "steps": [
+      "키/%tky로 대상 레코드를 읽기",
+      "필요한 필드만 CREATE/UPDATE/DELETE",
+      "FAILED/REPORTED/MAPPED와 결과를 확인"
+    ],
+    "check": "다건 입력에서 처리 결과와 오류 메시지를 확인한다",
+    "projectSection": "3-17 set_receive_qty — 타 BO(PO) 입고수량 갱신",
+    "sourceTitle": "EML — READ·CREATE·UPDATE·DELETE 예제",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df803d9395cb786ffb6100?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:31.419Z",
+    "snippet": {
+      "sourceBlockIndex": 3,
+      "language": "abap",
+      "excerpt": "READ ENTITIES OF zr_emp_d2_a10 IN LOCAL MODE\n   ENTITY Emp\n   FIELDS ( SkillCode ) WITH CORRESPONDING #( keys )\n   RESULT DATA(lt_emp).\n",
+      "isExcerpt": false
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 6,
+    "id": "3b6a6b8522df80b3bc18cda7f28435bd",
+    "task": "이용중지·해제 같은 사용자 버튼 만들기",
+    "location": "Root BDEF action 선언 → Behavior Pool action 구현 → Projection BDEF use action → MDE #FOR_ACTION",
+    "steps": [
+      "액션 이름·파라미터·결과를 BDEF에 선언",
+      "Handler에서 상태 변경과 result/%msg를 구성",
+      "Projection과 MDE에 버튼을 노출"
+    ],
+    "check": "버튼 클릭 후 상태와 결과 메시지가 갱신된다",
+    "projectSection": "1-5 block_account / unblock_account; 2-6 copy_determ",
+    "sourceTitle": "Action·메시지 — 버튼·결과·오류",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df80b3bc18cda7f28435bd?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:20:25.529Z",
+    "snippet": {
+      "sourceBlockIndex": 0,
+      "language": "abap",
+      "excerpt": "action set_stop_pernr result [0..1] $self;\n",
+      "isExcerpt": false
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 7,
+    "id": "3b6a6b8522df8021916eca9f22b8c629",
+    "task": "기본값 채우기와 저장 전 검증 나누기",
+    "location": "Root BDEF determination/validation 선언 + Behavior Pool 구현",
+    "steps": [
+      "기본값/계산은 determination에서 처리",
+      "검증 실패 대상은 failed와 reported에 기록",
+      "create/update 트리거와 다건 처리를 확인"
+    ],
+    "check": "유효한 값은 저장되고, 중복·부족·초과 데이터는 대상 행의 메시지와 함께 차단된다",
+    "projectSection": "1-4 check_saknr_unique; 3-5 set_default_value; 3-23 check_gr_qty; 3-25 check_cancel_qty",
+    "sourceTitle": "Determination·Validation — 자동 채움·검증",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df8021916eca9f22b8c629?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:33.902Z",
+    "snippet": {
+      "sourceBlockIndex": 8,
+      "language": "abap",
+      "excerpt": "METHOD check_skill_code.\n\n  READ ENTITIES OF zr_emp_d2_a10 IN LOCAL MODE\n    ENTITY Emp\n    ALL FIELDS WITH CORRESPONDING #( keys MAPPING %tky = %tky )\n    RESULT DATA(result_emps).\n\n  IF result_emps[ 1 ]-SkillCode IS INITIAL.\n\n    APPEND VALUE #(\n      %tky = result_emps[ 1 ]-%tky\n      %msg = new_message( id       = 'ZMCA10'",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 8,
+    "id": "3b6a6b8522df80ed80d6ddbcba3bc2e5",
+    "task": "상태별 버튼·필드·삭제 권한 제어",
+    "location": "Root BDEF instance features/authorization + Pool get_instance_features/get_instance_authorizations",
+    "steps": [
+      "필드·update/delete/action에 features를 선언",
+      "상태값을 읽고 기능 허용/비허용을 result에 반환",
+      "권한 처리는 별도 authorization handler에서 확인"
+    ],
+    "check": "상태별 UI 허용 범위와 권한 결과를 각각 확인한다",
+    "projectSection": "1-2 SKA1 features / 1-3 authorization / 3-10 아이템 features",
+    "sourceTitle": "권한·Feature Control — 버튼·필드 제어",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df80ed80d6ddbcba3bc2e5?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:32.090Z",
+    "snippet": {
+      "sourceBlockIndex": 2,
+      "language": "abap",
+      "excerpt": "METHOD get_instance_features.\n\n  \" keys엔 키만 있으니 실제 SkillCode 값을 보려면 READ 필수\n  READ ENTITIES OF zr_emp_d2_a10 IN LOCAL MODE\n    ENTITY Emp\n    FIELDS ( SkillCode ) WITH CORRESPONDING #( keys )\n    RESULT DATA(lt_emp).\n\n  DATA ls_result LIKE LINE OF result.   \" result가 itab이라 LIKE LINE OF 가능\n\n  LOOP AT lt_emp INTO DATA(ls_emp).\n",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 9,
+    "id": "3b6a6b8522df8012acecfed17a2b92bb",
+    "task": "Draft·Side Effects·채번 적용",
+    "location": "Root/Projection BDEF with draft·draft table·draft actions·side effects; OData V4 Service Binding",
+    "steps": [
+      "Root와 Projection의 Draft 노출을 함께 확인",
+      "Draft Prepare 검증과 번호 생성 시점을 정하기",
+      "필드 변경 후 Side Effect로 표시값이 갱신되는지 확인"
+    ],
+    "check": "임시저장·재열기·활성화와 변경 즉시 표시가 의도대로 동작한다",
+    "relatedIds": [
+      "3c2a6b8522df800ebb6ff341d1a1a67a"
+    ],
+    "projectSection": "3-0 MKPF/MSEG BDEF; 3-4 earlynumbering_cba_Item; 2-1 adjust_numbers",
+    "sourceTitle": "OData V4·Draft·Side Effect",
+    "sourceUrl": "https://app.notion.com/p/3b6a6b8522df8012acecfed17a2b92bb?pvs=204",
+    "sourceEditedAt": "2026-09-25T10:22:35.109Z",
+    "snippet": {
+      "sourceBlockIndex": 0,
+      "language": "abap",
+      "excerpt": "managed implementation in class zbp_r_skill_a10 unique;\nstrict ( 2 );\nwith draft;                          // ① draft 기능 켜기\n\ndefine behavior for ZR_SKILL_A10 alias Skill\npersistent table zta10skill\ndraft table zta10skilld              // ② draft 테이블 (보통 뒤에 d)\nlock master total etag LastChangedAt\nauthorization master ( instance )\netag master LastChangedAt\n{\n  create;",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  },
+  {
+    "order": 10,
+    "id": "3dda6b8522df80199896e13be8201d76",
+    "task": "입고 101·취소 102부터 FI 전표까지 전체 연결",
+    "location": "ZR_A10_SKA1/T030/MKPF·MSEG BDEF 및 Handler, Saver save_modified, FM ZF_A10_CREATE_BKPF",
+    "steps": [
+      "SKA1 계정과 T030 계정결정 마스터부터 확인",
+      "입고/취소 참조정보 자동 채움과 수량·잔량 검증 순서 확인",
+      "PO 수량 EML 갱신 및 save_modified→회계 FM 흐름 추적"
+    ],
+    "check": "유효한 입고/취소가 저장되고, 참조·잔량 검증 및 연결된 회계 처리 결과를 확인한다",
+    "relatedIds": [
+      "3aca6b8522df806e9585fde3268641df",
+      "3baa6b8522df80408d24f2e30b151481"
+    ],
+    "projectSection": "3-12~3-25 입고/취소 handler; 3-1 save_modified; 4 FM",
+    "sourceTitle": "⭐ 전체 코드 레퍼런스 — SKA1·T030·입고·회계",
+    "sourceUrl": "https://app.notion.com/p/3dda6b8522df80199896e13be8201d76?pvs=204",
+    "sourceEditedAt": "2026-09-25T11:23:39.724Z",
+    "snippet": {
+      "sourceBlockIndex": 36,
+      "language": "abap",
+      "excerpt": "METHOD set_receive_qty.\n\n  \" 이번에 저장되는 아이템들 읽기\n  READ ENTITIES OF zr_a10_mkpf IN LOCAL MODE\n  ENTITY GoodsReceiptItem\n  FIELDS ( Ebeln Ebelp Menge Bwart ) WITH CORRESPONDING #( keys )\n  RESULT DATA(lt_item).\n\n  \" PO 참조 없는 이동유형(311/511)은 제외\n  DELETE lt_item WHERE Ebeln IS INITIAL OR Ebelp IS INITIAL.\n  CHECK lt_item IS NOT INITIAL.\n",
+      "isExcerpt": true
+    },
+    "projectReferenceId": "3dda6b8522df80199896e13be8201d76"
+  }
+]

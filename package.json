@@ -1,0 +1,12 @@
+{
+  "name": "abap-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/verify-syntax.mjs && node scripts/verify-highlight.mjs && node scripts/verify-archive.mjs && node scripts/verify-archive-view.mjs && node scripts/verify-extended.mjs && node scripts/verify-abap-parser.mjs && node scripts/verify-blog.mjs && node scripts/verify-code-workspace.mjs && node scripts/verify-code-search.mjs && node scripts/verify-field-builder.mjs && node scripts/verify-style-recipes.mjs"
+  },
+  "devDependencies": {
+    "@abaplint/core": "2.120.81"
+  }
+}
