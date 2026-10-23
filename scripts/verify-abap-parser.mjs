@@ -13,7 +13,7 @@ for(const {kind:k} of generatorEntries.filter(e=>e.kind!=='rap')){const files=ge
 for(const d of [...practiceDocuments,...blogDocuments]){let n=0;for(const m of d.body.matchAll(/```abap\n([\s\S]*?)```/g)){if(m[1].startsWith('REPORT'))check(d.id+'-'+n++,m[1]);}}
 check('filter_multi_integration','REPORT zfilter_check.\n'+filterTop+'\n'+filterMultiCode+'\n'+filterSnapshotCode);
 for(const entry of libraryEntries.filter(e=>e.docId)){const main=combinedProgram(roleFiles(entry));if(main)check(entry.id+'-display',main.code);}
-fs.writeFileSync('audit/parser-results.json',JSON.stringify({checked,failures},null,2));console.log(JSON.stringify({checked,failures},null,2));
+fs.mkdirSync('audit',{recursive:true});fs.writeFileSync('audit/parser-results.json',JSON.stringify({checked,failures},null,2));console.log(JSON.stringify({checked,failures},null,2));
 
 
 if(failures.length)process.exitCode=1;

@@ -25,7 +25,7 @@ assert.equal(validationTopics.length,12);assert.equal(practiceDocuments.length,1
 for(const t of validationTopics)assert.equal(practiceDocuments.filter(d=>topicMatch(d,'validation',t.id)).length,1);
 assert.ok(catalogGroups.some(g=>g.id==='generation'));
 const stat={passed:true,generatorChoices:49,extendedKinds:44,validationTypes:12,authoredDocuments:58,checks:['all kinds generate','names/screens/structured fields','F4 return/cancel/Enter','MAKE_FCAT/Grid integration','object prefix','DB key/LUW restrictions','invalid input rejection','catalog topic coverage']};
-fs.writeFileSync('audit/extended-tests.json',JSON.stringify(stat,null,2));console.log(JSON.stringify(stat));
+fs.mkdirSync('audit',{recursive:true});fs.writeFileSync('audit/extended-tests.json',JSON.stringify(stat,null,2));console.log(JSON.stringify(stat));
 
 const {filterMultiCode,filterDocument}=await import('../dist/filter-docs.js');
 assert.ok(filterMultiCode.indexOf('WHEN OTHERS.')<filterMultiCode.indexOf('LOOP AT gt_multi'));

@@ -50,4 +50,4 @@ for(const e of generatorEntries){
 assert.ok(!libraryEntries.some(e=>['shdb','lock'].includes(e.kind)));
 for(const entry of libraryEntries){const files=roleFiles(entry).filter(isCodeFile);assert.ok(files.length>0,entry.id+' has no code');assert.ok(files.every(f=>!/^\s*TYPES\b/im.test(f.code)),entry.id+' has a TYPES declaration');}
 const report={passed:true,majorGroups:majorGroups.length,generatorChoices:generatorEntries.length,roleEntries:libraryEntries.length,initializationRoles:8,checks:['hierarchical coverage','no empty guide in code-first library','no local TYPES declaration','statement and comment preservation','formatter idempotence','HTML code only','HTML escaping','combined program includes expanded']};
-fs.writeFileSync('audit/code-workspace-tests.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+fs.mkdirSync('audit',{recursive:true});fs.writeFileSync('audit/code-workspace-tests.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
